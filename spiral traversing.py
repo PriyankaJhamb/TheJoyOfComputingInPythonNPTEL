@@ -56,15 +56,14 @@ def spiralPrint(m, n, a):
 
 a=[]
 count=1
-for i in range(5):
+for i in range(3):
     l=[]
-    for j in range(5):
+    for j in range(6):
         l.append(count)
         count+=1
     a.append(l)
     
-spiralPrint(5,5,a)
+spiralPrint(3, 6,a)
 
-            
-        
+
     

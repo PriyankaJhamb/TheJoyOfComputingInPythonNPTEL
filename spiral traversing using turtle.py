@@ -87,9 +87,9 @@ def spiralPrint(m, n):
         seurat.right(90)
 
 
-    
+
 spiralPrint(5,5)
 
-            
+turtle.done()           
         
     
