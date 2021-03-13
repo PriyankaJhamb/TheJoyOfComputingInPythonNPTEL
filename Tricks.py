@@ -49,3 +49,19 @@ e=3
 f=34
 e,f=f,e# swap the numbers
 print(e, f)
+
+
+#compare the two lists
+list1 = ["fg","fg", "rt", "fg", "lllf"]  
+list2 = ["fg","fg", "rt", "fg", "lf"]  
+  
+a = set(list1)  
+b = set(list2)  
+  
+print(a)
+print(b)
+
+if a == b:  
+    print("The list1 and list2 are equal")  
+else:  
+    print("The list1 and list2 are not equal")  
