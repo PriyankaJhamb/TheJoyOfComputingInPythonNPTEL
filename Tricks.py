@@ -38,7 +38,7 @@ b=['1','2','3','4','5','6']
 print("".join(b))#It will create a single list from all teh eleemnts in list b
 
 c=float("inf")
-print(c+4)# We can define 'infinity' in python using float('inf')
+print(c)# We can define 'infinity' in python using float('inf')
 
 dict={'flavour': 'strawberry'}
 print(dict)
@@ -65,3 +65,19 @@ if a == b:
     print("The list1 and list2 are equal")  
 else:  
     print("The list1 and list2 are not equal")  
+    
+# Define Positive infinity number
+ptive_inf = float('inf')
+
+if 99999999999999999 > ptive_inf:
+    print('Number is greater than Positive infinity')
+else:
+    print('Positive infinity is greater')
+
+# Define Negative infinity number
+ntive_inf = float('-inf')
+
+if -99999999999999999 > ptive_inf:
+    print('Numer is smaller than Negative infinity')
+else:
+    print('Negative infinity is smaller')
