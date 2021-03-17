@@ -81,3 +81,34 @@ if -99999999999999999 > ptive_inf:
     print('Numer is smaller than Negative infinity')
 else:
     print('Negative infinity is smaller')
+    
+#using of *before list_name to showing elements of list 
+n=int(input())
+matrix=[]
+count=0
+for row in range(0,n):
+    temp=[]
+    for col in range(0,n):
+        count+=1
+        temp.append(count)
+    matrix.append(temp)
+for r in matrix[:-1]:
+    print(r)
+    print(*r)
+print(matrix[-1], end=" ")   
+print(*matrix[-1], end=" ")
+
+#time.time() returns the current time in milli seconds since midnight, jan 1, 1970
+import time
+print(time.time())
+
+
+#ord() funciton converts a character into its ASCII notation
+print(ord('A'))
+
+
+
+
+            
+    
+                
