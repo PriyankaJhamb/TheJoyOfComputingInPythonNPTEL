@@ -107,6 +107,72 @@ print(time.time())
 print(ord('A'))
 
 
+#-----#    
+import nltk
+from nltk.tokenize import sent_tokenize
+from nltk.corpus import stopwords
+text1="Welcome to programming. Programming is fun."
+text2=" More fun is to program with Python. "
+text3="Python is simple yet very vast with multiple functionalities."
+text4="So, come enjoy programming with Python."
+mytext=text1+text2+text3+text4
+print(mytext)
+tokens=[t for t in mytext.split()]
+
+sr=stopwords.words('english')
+
+clean_tokens=tokens[:]
+
+
+freq=nltk.FreqDist(tokens)
+
+freq.plot(20, cumulative=False)
+
+#-----------------------#
+import nltk
+from nltk.tokenize import sent_tokenize
+from nltk.corpus import stopwords
+text1="Welcome to programming . Programming is fun ."
+text2=" More fun is to program with Python ."
+text3=" Python is simple yet very vast with multiple functionalities ."
+text4=" So, come enjoy programming with Python"
+mytext=text1+text2+text3+text4
+print(mytext)
+tokens=[t for t in mytext.split()]
+
+sr=stopwords.words('english')
+
+clean_tokens=tokens[:]
+
+
+freq=nltk.FreqDist(tokens)
+
+freq.plot(20, cumulative=False)
+####------------------####
+import nltk
+from nltk.tokenize import sent_tokenize
+from nltk.corpus import stopwords
+text1="Welcome to programming. Programming is fun."
+text2=" More fun is to program with Python. "
+text3="Python is simple yet very vast with multiple functionalities."
+text4="So, come enjoy programming with Python."
+mytext=text1+text2+text3+text4
+
+tokens=[t for t in mytext.split()]
+
+
+clean_tokens=tokens[:]
+
+for token in tokens:
+
+    if token in stopwords.words('english'):
+
+        clean_tokens.remove(token)
+
+freq=nltk.FreqDist(clean_tokens)
+
+freq.plot(20, cumulative=False)
+        
 
 
             
