@@ -15,9 +15,9 @@ def remove_matching_letter(l1,l2):
                 l1.remove(c)
                 l2.remove(c)
                 l=l1+['*']+l2
-                return(l, True)
+                return[l, True]
     l=l1+['*']+l2
-    return(l, False)   
+    return[l, False]   
 p1=input('Enter first person name: ')
 p1=p1.lower()
 p1=p1.replace(" ", "")
