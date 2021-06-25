@@ -10,6 +10,7 @@ class Employee:
 
     def increase(self):
         self.salary=self.salary * Employee.increment
+        # return self.salary
 
     @classmethod
     def change_increment(cls, amount):
@@ -26,6 +27,21 @@ class Employee:
             return False
         else:
             return True
+
+#inheritance
+
+class Programmer(Employee):
+    def __init__(self, fname, lname, salary, progexp, proglang):
+        super().__init__(fname, lname, salary)
+        self.progexp=progexp
+        self.proglang=proglang
+
+# Hanit=Programmer("Hanit", "Kumar", 346756, "4 years", "Python")
+# print(Hanit.salary)
+# print(Hanit.increase())
+# print(Hanit.progexp)
+# print(help(Programmer))
+# help(Programmer)
 
 # print(Employee.isopen("MONDAY"))
 # Priyanka=Employee.from_str("Priyanka-Jhamb-65900")
