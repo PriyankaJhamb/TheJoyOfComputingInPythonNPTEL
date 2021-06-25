@@ -27,7 +27,24 @@ class Employee:
             return False
         else:
             return True
+    # Magic Functions (Dundar Methods)
 
+    def __add__(self, other):
+        return self.salary+other.salary
+
+    def __repr__(self):
+        return 'Employee({} {} {})'.format(self.fname,self.lname,self.salary)
+    def __str__(self):
+        return "The name of the Employee is {}".format(self.fname)
+
+sonu=Employee("SOnu","Kakkar", 234235454)
+Neha=Employee("Neha","Kakkar", 23343235454)
+a=4
+print(a.__add__(34))
+print(sonu+Neha)
+print(repr(sonu))
+print(str(sonu))
+print(Neha)
 #inheritance
 
 class Programmer(Employee):
@@ -35,6 +52,8 @@ class Programmer(Employee):
         super().__init__(fname, lname, salary)
         self.progexp=progexp
         self.proglang=proglang
+
+
 
 # Hanit=Programmer("Hanit", "Kumar", 346756, "4 years", "Python")
 # print(Hanit.salary)
