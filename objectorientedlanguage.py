@@ -105,12 +105,12 @@ class Programmer(Employee):
 # Employee.change_increment(4)
 # harry.increase();
 # print(harry.salary)
-# print(Employee.__dict__)
+# print(Employee.__dict__)#to know how may functions or methods are in this..class
 # print(harry.__dict__)
 # print(rohan.__dict__)
 
 
 
 class employee:
-    pass
+    pass#it is the way to tell to the python interpreter that this will be defined later on and I know it so, don't show any error for this.
 
